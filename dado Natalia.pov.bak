@@ -221,6 +221,7 @@ difference{
 
 
 ///DADO 3 - FILA INFERIOR 
+
 difference{
     superellipsoid{ <0.15,0.15> 
         texture{ 

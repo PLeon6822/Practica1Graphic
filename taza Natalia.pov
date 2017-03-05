@@ -1,5 +1,4 @@
 
-
 ///sor Surface of Revolution 
 union{
     difference{
@@ -17,9 +16,9 @@ union{
             //  sturm  // optional!
             material{   //-----------------------------------------------------------
                 texture { 
-                            pigment{ color rgb <0.0001, 0.0001, 0.0001> }
-                          finish { diffuse 1 reflection{ 0.05 }   
-                                   specular 1 roughness 0.0003 phong 0}
+                            pigment{ color rgb <0.0005, 0.0005, 0.0005> }
+                          finish { reflection{ 0.05 }   
+                                   specular 0.8 phong 0.5 }
                         } // end of texture -------------------------------------------
                
               } // end of material ----------------------------------------------------
@@ -39,9 +38,9 @@ union{
         
             //  sturm  // optional!
             material{   //-----------------------------------------------------------
-                texture { pigment{ color rgb <0.0001, 0.0001, 0.0001> }
-                          finish { diffuse 1 reflection{ 0.01}   
-                                   specular 0.8 roughness 0.0003}
+                texture { pigment{ color rgb <0.0005, 0.0005, 0.0005> }
+                          finish { reflection{ 0.05 }   
+                                   specular 0.15 phong 0.5 }
                         } // end of texture -------------------------------------------
                
               } // end of material ----------------------------------------------------
@@ -49,8 +48,8 @@ union{
         } // end of sor --------------------------------- 
     }   
     torus { 15.45,0.55 
-        texture { pigment{ color rgb<0.0001,0.0001,0.0001>}
-                  finish { phong 0.5 reflection { 0.02 } }
+        texture { pigment{ color rgb<0.0005,0.0005,0.0005>}
+                  finish { phong 0.5 reflection { 0.02 } specular 0.3}
                 } // end of texture
         scale <1,1,1> rotate<0,0,0> translate<10,23.9,0>
       } // end of torus  -------------------------------              

@@ -11,48 +11,25 @@ difference{
         translate<5,3.1,5>
     } // -------------- end superellipsoid
     
-    
     //2
-    sphere{<2.5,5.5,0> 1 texture{ pigment {color White}}} 
-    sphere{<7,1,0> 1     texture{ pigment {color White}}}     
-    //End of 2
+    sphere{<2.5,5.5,0> 1 } sphere{<7,1,0> 1     }      //End of 2
     
     //1
-    sphere{<5,8,5> 1  texture{pigment {color White}}}  
-    //End of 1
+    sphere{<5,8,5> 1  }  //End of 1
     
     //5
-    sphere{<5,3.5,10> 1   texture{ pigment {color White}}} 
-    sphere{ <2.5,6,10> 1  texture{ pigment {color White}}}
-    sphere{ <7.5,6,10> 1  texture{ pigment {color White}}}
-    sphere{<2.5,0.5,10> 1 texture{ pigment {color White}}}
-    sphere{<7.5,0.5,10> 1 texture{ pigment {color White}}}
-    //End of 5
+    sphere{<5,3.5,10> 1   } sphere{ <2.5,6,10> 1  } sphere{ <7.5,6,10> 1  } sphere{<2.5,0.5,10> 1 } sphere{<7.5,0.5,10> 1 } //End of 5
     
     //3  
-    sphere{<0,5.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<0,3.25,5> 1 texture{pigment {color White}}}   
-    sphere{<0,0.5,7.5> 1 texture{pigment {color White}}} 
-    //End of 3
+    sphere{<0,5.5,2.5> 1 } sphere{<0,3.25,5> 1 }  sphere{<0,0.5,7.5> 1 }   //End of 3
     
     //4  
-    sphere{<10,1,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,1,7.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,7.5> 1 texture{pigment {color White}}}  
-    //End of 4
+    sphere{<10,1,2.5> 1 } sphere{<10,1,7.5> 1 } sphere{<10,6,2.5> 1 } sphere{<10,6,7.5> 1 }    //End of 4
     
     //6
-    sphere{<7.5,-1.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,2.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,2.5> 1 texture{pigment {color White}}}
-    sphere{<7.5,-1.5,7.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,7.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,7.5> 1 texture{pigment {color White}}}
-    
-    
-    rotate<0,5,0>   
-    translate<0,10,0>
+    sphere{<7.5,-1.5,2.5> 1 } sphere{<5,-1.5,2.5> 1   } sphere{<2.5,-1.5,2.5> 1 } sphere{<7.5,-1.5,7.5> 1 } sphere{<5,-1.5,7.5> 1   } sphere{<2.5,-1.5,7.5> 1 }
+
+    rotate<0,5,0>   translate<0,10,0>     texture{pigment{ color rgb <1,1,1> }}
 }  
     
     
@@ -67,46 +44,24 @@ difference{
     
     
     //2
-    sphere{<2.5,5.5,0> 1 texture{ pigment {color White}}} 
-    sphere{<7,1,0> 1     texture{ pigment {color White}}}     
-    //End of 2
+    sphere{<2.5,5.5,0> 1 } sphere{<7,1,0> 1     }      //End of 2
     
     //1
-    sphere{<5,8,5> 1  texture{pigment {color White}}}  
-    //End of 1
+    sphere{<5,8,5> 1  }   //End of 1
     
     //5
-    sphere{<5,3.5,10> 1   texture{ pigment {color White}}} 
-    sphere{ <2.5,6,10> 1  texture{pigment {color White}}}
-    sphere{ <7.5,6,10> 1  texture{pigment {color White}}}
-    sphere{<2.5,0.5,10> 1 texture{pigment {color White}}}
-    sphere{<7.5,0.5,10> 1 texture{ pigment {color White}}}
-    //End of 5
+    sphere{<5,3.5,10> 1   } sphere{ <2.5,6,10> 1  } sphere{ <7.5,6,10> 1  } sphere{<2.5,0.5,10> 1 } sphere{<7.5,0.5,10> 1 } //End of 5
     
     //3  
-    sphere{<0,5.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<0,3.25,5> 1 texture{pigment {color White}}}   
-    sphere{<0,0.5,7.5> 1 texture{pigment {color White}}} 
-    //End of 3
+    sphere{<0,5.5,2.5> 1 } sphere{<0,3.25,5> 1 }  sphere{<0,0.5,7.5> 1 }  //End of 3
     
     //4  
-    sphere{<10,1,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,1,7.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,7.5> 1 texture{pigment {color White}}}  
-    //End of 4
+    sphere{<10,1,2.5> 1 } sphere{<10,1,7.5> 1 } sphere{<10,6,2.5> 1 } sphere{<10,6,7.5> 1 }   //End of 4
     
     //6
-    sphere{<7.5,-1.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,2.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,2.5> 1 texture{pigment {color White}}}
-    sphere{<7.5,-1.5,7.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,7.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,7.5> 1 texture{pigment {color White}}}
+    sphere{<7.5,-1.5,2.5> 1 } sphere{<5,-1.5,2.5> 1   } sphere{<2.5,-1.5,2.5> 1 } sphere{<7.5,-1.5,7.5> 1 } sphere{<5,-1.5,7.5> 1   } sphere{<2.5,-1.5,7.5> 1 }
     
-         //z, x,  z
-    rotate<90, -80,2>   
-    translate<21,18,-2>
+    rotate<90, -80,2>   translate<21,18,-2>   texture{pigment{ color rgb <1,1,1> }}
 }
 
 
@@ -120,48 +75,25 @@ difference{
         translate<5,3.1,5>
     } // -------------- end superellipsoid
     
-    
     //2
-    sphere{<2.5,5.5,0> 1 texture{ pigment {color White}}} 
-    sphere{<7,1,0> 1     texture{ pigment {color White}}}     
-    //End of 2
+    sphere{<2.5,5.5,0> 1 } sphere{<7,1,0> 1     }     //End of 2
     
     //1
-    sphere{<5,8,5> 1  texture{pigment {color White}}}  
-    //End of 1
+    sphere{<5,8,5> 1  }  //End of 1
     
     //5
-    sphere{<5,3.5,10> 1   texture{ pigment {color White}}} 
-    sphere{ <2.5,6,10> 1  texture{pigment {color White}}}
-    sphere{ <7.5,6,10> 1  texture{pigment {color White}}}
-    sphere{<2.5,0.5,10> 1 texture{pigment {color White}}}
-    sphere{<7.5,0.5,10> 1 texture{ pigment {color White}}}
-    //End of 5
+    sphere{<5,3.5,10> 1   } sphere{ <2.5,6,10> 1  } sphere{ <7.5,6,10> 1  } sphere{<2.5,0.5,10> 1 } sphere{<7.5,0.5,10> 1 }  //End of 5
     
     //3  
-    sphere{<0,5.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<0,3.25,5> 1 texture{pigment {color White}}}   
-    sphere{<0,0.5,7.5> 1 texture{pigment {color White}}} 
-    //End of 3
+    sphere{<0,5.5,2.5> 1 } sphere{<0,3.25,5> 1 }   sphere{<0,0.5,7.5> 1 }   //End of 3
     
     //4  
-    sphere{<10,1,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,1,7.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,7.5> 1 texture{pigment {color White}}}  
-    //End of 4
+    sphere{<10,1,2.5> 1 } sphere{<10,1,7.5> 1 } sphere{<10,6,2.5> 1 } sphere{<10,6,7.5> 1 }   //End of 4
     
     //6
-    sphere{<7.5,-1.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,2.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,2.5> 1 texture{pigment {color White}}}
-    sphere{<7.5,-1.5,7.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,7.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,7.5> 1 texture{pigment {color White}}}
+    sphere{<7.5,-1.5,2.5> 1 } sphere{<5,-1.5,2.5> 1   } sphere{<2.5,-1.5,2.5> 1 } sphere{<7.5,-1.5,7.5> 1 } sphere{<5,-1.5,7.5> 1   } sphere{<2.5,-1.5,7.5> 1 }
     
-    
-    rotate<-2, 270,90>   
-    translate<3,8,1>
+    rotate<-2, 270,90>   translate<3,8,1>    texture{pigment{ color rgb <1,1,1> }}     
 }
 
 
@@ -176,46 +108,25 @@ difference{
     
     
     //2
-    sphere{<2.5,5.5,0> 1 texture{ pigment {color White}}} 
-    sphere{<7,1,0> 1     texture{ pigment {color White}}}     
-    //End of 2
+    sphere{<2.5,5.5,0> 1 } sphere{<7,1,0> 1     }      //End of 2
     
     //1
-    sphere{<5,8,5> 1  texture{pigment {color White}}}  
-    //End of 1
+    sphere{<5,8,5> 1  }   //End of 1
     
     //5
-    sphere{<5,3.5,10> 1   texture{ pigment {color White}}} 
-    sphere{ <2.5,6,10> 1  texture{pigment {color White}}}
-    sphere{ <7.5,6,10> 1  texture{pigment {color White}}}
-    sphere{<2.5,0.5,10> 1 texture{pigment {color White}}}
-    sphere{<7.5,0.5,10> 1 texture{ pigment {color White}}}
-    //End of 5
+    sphere{<5,3.5,10> 1   } sphere{ <2.5,6,10> 1  } sphere{ <7.5,6,10> 1  } sphere{<2.5,0.5,10> 1 } sphere{<7.5,0.5,10> 1 }   //End of 5
     
     //3  
-    sphere{<0,5.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<0,3.25,5> 1 texture{pigment {color White}}}   
-    sphere{<0,0.5,7.5> 1 texture{pigment {color White}}} 
-    //End of 3
+    sphere{<0,5.5,2.5> 1 } sphere{<0,3.25,5> 1 }   sphere{<0,0.5,7.5> 1 }  //End of 3
     
     //4  
-    sphere{<10,1,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,1,7.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,7.5> 1 texture{pigment {color White}}}  
-    //End of 4
+    sphere{<10,1,2.5> 1 } sphere{<10,1,7.5> 1 } sphere{<10,6,2.5> 1 } sphere{<10,6,7.5> 1 }  //End of 4
     
     //6
-    sphere{<7.5,-1.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,2.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,2.5> 1 texture{pigment {color White}}}
-    sphere{<7.5,-1.5,7.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,7.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,7.5> 1 texture{pigment {color White}}}
+    sphere{<7.5,-1.5,2.5> 1 } sphere{<5,-1.5,2.5> 1   } sphere{<2.5,-1.5,2.5> 1 } sphere{<7.5,-1.5,7.5> 1 } sphere{<5,-1.5,7.5> 1   } sphere{<2.5,-1.5,7.5> 1 }
     
     
-    rotate<185,5,90>   
-    translate<9.5,-1,10>
+    rotate<185,5,90>   translate<9.5,-1,10>     texture{pigment{ color rgb <1,1,1> }}
 }  
 
 
@@ -232,46 +143,24 @@ difference{
     
     
     //2
-    sphere{<2.5,5.5,0> 1 texture{ pigment {color White}}} 
-    sphere{<7,1,0> 1     texture{ pigment {color White}}}     
-    //End of 2
+    sphere{<2.5,5.5,0> 1 } sphere{<7,1,0> 1     }     //End of 2
     
     //1
-    sphere{<5,8,5> 1  texture{pigment {color White}}}  
-    //End of 1
+    sphere{<5,8,5> 1  }  //End of 1
     
     //5
-    sphere{<5,3.5,10> 1   texture{ pigment {color White}}} 
-    sphere{ <2.5,6,10> 1  texture{pigment {color White}}}
-    sphere{ <7.5,6,10> 1  texture{pigment {color White}}}
-    sphere{<2.5,0.5,10> 1 texture{pigment {color White}}}
-    sphere{<7.5,0.5,10> 1 texture{ pigment {color White}}}
-    //End of 5
+    sphere{<5,3.5,10> 1   } sphere{ <2.5,6,10> 1  } sphere{ <7.5,6,10> 1  } sphere{<2.5,0.5,10> 1 } sphere{<7.5,0.5,10> 1 }//End of 5
     
     //3  
-    sphere{<0,5.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<0,3.25,5> 1 texture{pigment {color White}}}   
-    sphere{<0,0.5,7.5> 1 texture{pigment {color White}}} 
-    //End of 3
+    sphere{<0,5.5,2.5> 1 } sphere{<0,3.25,5> 1 }   sphere{<0,0.5,7.5> 1 }  //End of 3
     
     //4  
-    sphere{<10,1,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,1,7.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,2.5> 1 texture{pigment {color White}}} 
-    sphere{<10,6,7.5> 1 texture{pigment {color White}}}  
-    //End of 4
+    sphere{<10,1,2.5> 1 } sphere{<10,1,7.5> 1 } sphere{<10,6,2.5> 1 } sphere{<10,6,7.5> 1 }   //End of 4
     
     //6
-    sphere{<7.5,-1.5,2.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,2.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,2.5> 1 texture{pigment {color White}}}
-    sphere{<7.5,-1.5,7.5> 1 texture{pigment {color White}}} 
-    sphere{<5,-1.5,7.5> 1   texture{pigment {color White}}}
-    sphere{<2.5,-1.5,7.5> 1 texture{pigment {color White}}}
-    
-    
-    rotate<9,5,90>   
-    translate<26.5,-2,-2>
+    sphere{<7.5,-1.5,2.5> 1 } sphere{<5,-1.5,2.5> 1   } sphere{<2.5,-1.5,2.5> 1 } sphere{<7.5,-1.5,7.5> 1 } sphere{<5,-1.5,7.5> 1   } sphere{<2.5,-1.5,7.5> 1 }
+
+    rotate<9,5,90>   translate<26.5,-2,-2>   texture{pigment{ color rgb <1,1,1> }}
 }
 
 
