@@ -48,7 +48,7 @@ union{
             object{ Hyperboloid_Y }
             scale <1.2,2.1,1>*3.5 rotate<35,0,-120> translate<-10,42,-8> } // end of intersection  -----------------------------    
         
-        rotate<0, 0, 0>   translate <0, 0, 0>   
+        rotate<0, 0, 0>   translate <0, 6, 0>   
     }    
     
     
