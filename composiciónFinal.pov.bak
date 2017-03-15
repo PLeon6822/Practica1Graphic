@@ -168,7 +168,7 @@ union{
         rotate<9,5,90>   translate<26.5,-2,-2>   texture{pigment{ color rgb <1,1,1> }}
     }
 
-       scale 0.5
+       scale 0.5     translate <0,-1,0>
 }       
        
        
@@ -236,7 +236,7 @@ union{
         scale <1,1,1> rotate<0,0,0> translate<10,23.9,0>
       } // end of torus  -------------------------------              
 
-    translate <30, 0, 10>   scale 0.9
+    translate <40, -2, 15>   scale <0.75, 0.78,  0.9>      rotate<0,0,0>
 }
        
        
@@ -293,25 +293,27 @@ union{
                 object{ Hyperboloid_Y }
                 scale <1.2,2.1,1>*3.5 rotate<35,0,-120> translate<-10,42,-8> } // end of intersection  -----------------------------    
             
-            rotate<0, 0, 0>   translate <0, 0, 0>   
+            rotate<0, 0, 0>   translate <0, 6, 0>   
         }    
         
         
-        
-        union{   
-                //ESFERA SUPERIOR
-            sphere { <0,0,0>, 4   scale<2,2,2>  rotate<0,0,0>  translate<-18.5,47,-16> }  // end of sphere ----------------------------------- 
-            
-                         
-                //PALO ESFERA SUPERIOR
-            intersection{
-                box{ <-2,-1.2,-2.5>,<2.2, 1.5,2.5> } 
-                object{ Hyperboloid_Y }
-                scale <1.2,2.1,1>*3.5 rotate<35,0,-120> translate<-10,42,-8> } // end of intersection  -----------------------------    
-            
-            rotate<0, 120, 0>   translate <0, 3.5, 2>    scale 1
-             
-        }   
+        union{
+            union{   
+                    //ESFERA SUPERIOR
+                sphere { <0,0,0>, 4   scale<2,2,2>  rotate<0,0,0>  translate<-18.5,47,-16> }  // end of sphere ----------------------------------- 
+                
+                             
+                    //PALO ESFERA SUPERIOR
+                intersection{
+                    box{ <-2,-1.2,-2.5>,<2.2, 1.5,2.5> } 
+                    object{ Hyperboloid_Y }
+                    scale <1.2,2.1,1>*3.5 rotate<35,0,-120> translate<-10,42,-8> } // end of intersection  -----------------------------    
+                
+                rotate<0, 120, 0>   translate <-1, 3.5, 2>    scale 1
+                 
+            }
+            rotate<0,10,0>   
+        }
         texture { pigment{ color rgb<0.4, 0.576, 0.486>}  }  
         scale 0.5        rotate<110,40,180>    translate<0,1,0.0>
     }
@@ -320,7 +322,69 @@ union{
        
 
 
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
+//*****************************   VASO   *****************************          
+        
+        
+        
+merge{
+    difference{
+        ///sor Surface of Revolution 
+        sor{
+            7,
+            <15.000,0.000> 
+            <15.000,15.000>
+            <15.500,35.000>
+            <16.500,45.000>
+            <19.000,55.000>
+            <21.000,70.000> 
+            <21.300,80.000>
+            //open
+            //  sturm  // optional!
+            scale 1.0  rotate<0,0,0> translate<0,-16,0>
+        } // end of sor ---------------------------------         
+    
+        sor{
+            7,
+            <14.000,0.000> 
+            <14.000,20.000>
+            <14.500,35.000>
+            <15.500,45.000>
+            <18.000,55.000>
+            <20.000,70.000>
+            <21.300,70.000>
+            //open
+            //  sturm  // optional!
+            scale 1.0  rotate<0,0,0> translate<0,-15.5,0>
+        }
+     scale 1.5
+    }
+    torus { 30,1.5  rotate<0,0,0>
+        scale 1 rotate<0,0,0>  translate<0,80,0>
+      } // end of torus  -------------------------------
+      material{   //-----------------------------------------------------------
+                texture { pigment { color rgb<1,1,1,0.96> }
+                finish {
+                    ambient 0.15
+                    diffuse 0.4
+                    reflection 0.07
+                    specular 0.5
+                    roughness 0.05
+                }
+                        } // end of texture -------------------------------------------
+                interior{ ior 1.33 caustics 1.8
+                } // end of interior ------------------------------------------
+            } // end of material ----------------------------------------------------              
+     scale 0.45   translate <20,-1,35>
+}         
 
 
        
@@ -328,7 +392,7 @@ union{
 
 camera {
     location <12, 30, -80>
-    look_at <15, 0, 10>
+    look_at <10, 0, 10>
 }
 
 light_source {
