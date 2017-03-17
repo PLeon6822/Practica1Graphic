@@ -6,12 +6,13 @@
 
 //*****************************   DADOS   *****************************
 
+union{
 union{          
     ///DADO 1 - FILA SUPERIOR 
     difference{
         superellipsoid{ <0.15,0.15> 
             texture{ 
-                pigment{ color rgb<1,0.05,0,0.9> }   finish { specular 0.5 diffuse 0.8 }} // end of texture
+                pigment{ color rgb<1,0.05,0,0.9> }   finish { specular 0.005 diffuse 0.8 }} // end of texture
             scale <5,5,5>  
             translate<5,3.1,5>
         } // -------------- end superellipsoid
@@ -42,7 +43,7 @@ union{
     difference{
         superellipsoid{ <0.15,0.15> 
             texture{ 
-                pigment{ color rgb <1,0.05,0,0.9> }   finish { specular 0.5 diffuse 0.8 }} // end of texture
+                pigment{ color rgb <1,0.05,0,0.9> }   finish { specular 0.005 diffuse 0.8 }} // end of texture
             scale <5,5,5>  
             translate<5,3.1,5>
         } // -------------- end superellipsoid
@@ -75,7 +76,7 @@ union{
     difference{
         superellipsoid{ <0.15,0.15> 
             texture{ 
-                pigment{ color rgb <1,0.05,0,0.9> }   finish { specular 0.5 diffuse 0.8 }} // end of texture
+                pigment{ color rgb <1,0.05,0,0.9> }   finish { specular 0.005 diffuse 0.8 }} // end of texture
             scale <5,5,5>  
             translate<5,3.1,5>
         } // -------------- end superellipsoid
@@ -106,7 +107,7 @@ union{
     difference{
         superellipsoid{ <0.15,0.15> 
             texture{ 
-                pigment{ color rgb <1,0.05,0,0.9> }   finish { specular 0.5 diffuse 0.8 }} // end of texture
+                pigment{ color rgb <1,0.05,0,0.9> }   finish { specular 0.005 diffuse 0.8 }} // end of texture
             scale <5,5,5>  
             translate<5,3.1,5>
         } // -------------- end superellipsoid
@@ -141,7 +142,7 @@ union{
     difference{
         superellipsoid{ <0.15,0.15> 
             texture{ 
-                pigment{ color rgb <1,0.05,0,0.9> }   finish { specular 0.5 diffuse 0.8 }} // end of texture
+                pigment{ color rgb <1,0.05,0,0.9> }   finish { specular 0.005 diffuse 0.8 }} // end of texture
             scale <5,5,5>  
             translate<5,3.1,5>
         } // -------------- end superellipsoid
@@ -168,7 +169,7 @@ union{
         rotate<9,5,90>   translate<26.5,-2,-2>   texture{pigment{ color rgb <1,1,1> }}
     }
 
-       scale 0.5     translate <0,-1,0>
+       scale 0.5     translate <-5,-1,0>    rotate <0,-2,0>
 }       
        
        
@@ -177,10 +178,10 @@ union{
        
        
        
-       
+   
        
 //*****************************   TAZA   *****************************
-
+union{
 ///sor Surface of Revolution 
 union{
     difference{
@@ -200,7 +201,7 @@ union{
                 texture { 
                             pigment{ color rgb <0.0005, 0.0005, 0.0005> }
                           finish { reflection{ 0}   
-                                   specular 0.05 phong 0.5 }
+                                   specular 0.3 phong 0.5 }
                         } // end of texture -------------------------------------------
                
               } // end of material ----------------------------------------------------
@@ -222,7 +223,7 @@ union{
             material{   //-----------------------------------------------------------
                 texture { pigment{ color rgb <0, 0, 0> }
                           finish { reflection{ 0.000000005 }   
-                                   specular 0 phong 0.5 }
+                                   specular 0.1 phong 0.05 }
                         } // end of texture -------------------------------------------
                
               } // end of material ----------------------------------------------------
@@ -231,19 +232,19 @@ union{
     }   
     torus { 15.45,0.55 
         texture { pigment{ color rgb<0,0,0>}
-                  finish { phong 0.5 reflection { 0 } specular 0.3}
+                  finish { phong 0.5 reflection { 0 } specular 0.1}
                 } // end of texture
         scale <1,1,1> rotate<0,0,0> translate<10,23.9,0>
       } // end of torus  -------------------------------              
 
-    translate <40, -2, 15>   scale <0.75, 0.78,  0.9>      rotate<0,0,0>
+    translate <35, -2, 15>   scale <0.75, 0.75,  0.9>      rotate<0,0,0>
 }
-       
-       
+ scale 0.8      
+}      
        
 
 
-
+  
 
 
 
@@ -314,10 +315,11 @@ union{
             }
             rotate<0,10,0>   
         }
-        texture { pigment{ color rgb<0.4, 0.576, 0.486>}  }  
+        texture { pigment{ color rgb<0.25,0.7,0.6>} finish { reflection{ 0}   
+                                   specular 0.0005 phong 0.5 } }  
         scale 0.5        rotate<110,40,180>    translate<0,1,0.0>
     }
-      rotate<0, 60, 0>   translate <-10, 0, 30>
+      rotate<0, 50, 0>   translate <-15, 0, 23>
 }
        
 
@@ -333,7 +335,7 @@ union{
         
 //*****************************   VASO   *****************************          
         
-        
+union{        
         
 merge{
     difference{
@@ -368,7 +370,7 @@ merge{
      scale 1.5
     }
     torus { 30,1.5  rotate<0,0,0>
-        scale 1 rotate<0,0,0>  translate<0,80,0>
+        scale 1 rotate<0,0,0>  translate<0,82,0>
       } // end of torus  -------------------------------
       material{   //-----------------------------------------------------------
                 texture { pigment { color rgb<1,1,1,0.96> }
@@ -383,22 +385,50 @@ merge{
                 interior{ ior 1.33 caustics 1.8
                 } // end of interior ------------------------------------------
             } // end of material ----------------------------------------------------              
-     scale 0.45   translate <20,-1,35>
+     scale 0.4   translate <7,-1,19>
 }         
 
+}    
 
-       
-       
+
+
+
+
+//*****************************   PELOTA   *****************************   
+sphere { <0,0,0>, 14
+
+        texture { pigment{ 
+                       image_map
+                          { png "baseball3.png"
+                            map_type 1
+                          }
+                        }
+               
+                  finish { phong 0.1 reflection 0 }
+                } // end of texture
+
+          scale<1,1,1>  rotate<0,110,35>  translate<38,13,40>  
+       }  // end of sphere ----------------------------------- 
+
+
+
+
+scale 1.5
+     
+}       
 
 camera {
-    location <12, 30, -80>
+  //location <12, 200, 0>
+    location <10,65,-100>   
+    //location<10,0,-100>
     look_at <10, 0, 10>
 }
 
 light_source {
-    <30, 50, -60>
-    color rgb <0.9, 0.85, 0.6>
-}
+    <130, 400, -300>
+    color rgb <0.945,0.694,0.337>
+} 
+
 plane {
     <0,1,0>, -2  
     texture {       
